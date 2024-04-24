@@ -9,7 +9,7 @@
 __bp_delay_install="delayed"
 
 # shellcheck source-path=SCRIPTDIR/../vendor/github.com/rcaloras/bash-preexec
-source "${BASH_IT?}/vendor/github.com/rcaloras/bash-preexec/bash-preexec.sh"
+#source "${BASH_IT?}/vendor/github.com/rcaloras/bash-preexec/bash-preexec.sh"
 
 # Block damanaging user's `$HISTCONTROL`
 function __bp_adjust_histcontrol() { :; }
@@ -22,7 +22,7 @@ function __bp_require_not_readonly() { :; }
 : "${__bp_enable_subshells:=}" # blank
 
 # Modify `$PROMPT_COMMAND` in finalize hook
-_bash_it_library_finalize_hook+=('__bp_install_after_session_init')
+#_bash_it_library_finalize_hook+=('__bp_install_after_session_init')
 
 ## Helper functions
 function __check_precmd_conflict() {
